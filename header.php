@@ -33,10 +33,10 @@
 			</div>
 
 	  		<div class="socials">
-				<a href='https://feedly.com/i/subscription/feed%2F<?=urlencode_deep(get_site_url())?>%2Ffeed%2F' target='blank'>
+				<a href='https://feedly.com/i/subscription/feed%2F<?=urlencode_deep(get_site_url())?>%2Ffeed%2F' target='_blank'>
 					<img id='feedlyFollow' src='https://s3.feedly.com/img/follows/feedly-follow-circle-flat-green_2x.png' alt='Seguir en Feedly' width='17' height='17'>
 				</a>
-				<a href='<?=get_site_url()?>/feed/' target="">
+				<a href='<?=get_site_url()?>/feed/' target="_blank">
 					<i class="fa fa-rss" style="color: #ee802f;"></i>
 				</a>
 			</div>

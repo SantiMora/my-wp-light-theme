@@ -8,9 +8,11 @@
 
             <article id="post-<?php the_ID();?>" <?php post_class("single-post");?>>
 
+            	<?php if (! is_home()) :?>
             	<header class="post-title">
             		<h1 ><?php the_title();?></h1>
             	</header>
+            	<?php endif;?>
 
             	<?php if (! is_page()) :?>
             	<div class="post-meta">

@@ -24,7 +24,7 @@
 	<p>
 		<i class="fa fa-copyright"></i> 
 		<strong><?=date('Y')?></strong> 
-		Hecho con <a href="https://wordpress.org" target="blank">Wordpress</a> y <a href="" target="blank">mi tema</a>
+		Hecho con <a href="https://wordpress.org" target="_blank">Wordpress</a> y <a href="https://github.com/SantiMora/myWpLightTheme" target="_blank">mi tema</a>
 	</p>
 </footer>
 <?php wp_footer();?>
