@@ -1,9 +1,5 @@
 <footer id="site-footer">
 
-	<p class="to-the-top">
-		<a href="#site-top">Volver arriba <i class="fa fa-arrow-up"></i></a>
-	</p>
-
 	<div class="footer-buttons">
 
 		<p>
@@ -18,13 +14,18 @@
 				<i class="fa fa-envelope"></i>
 			</a>
 			<?php endif; ?>
+
+			<a href="#site-top" class="tooltip" data-tooltip-text="Volver arriba" style="margin-left: 30px;"> 
+				<i class="fa fa-arrow-up"></i>
+			</a>
 		</p>
+
 	</div>
 
-	<p>
+	<p style="text-align: left;">
 		<i class="fa fa-copyright"></i> 
 		<strong><?=date('Y')?></strong> 
-		Hecho con <a href="https://wordpress.org" target="_blank">Wordpress</a> y <a href="https://github.com/SantiMora/myWpLightTheme" target="_blank">mi tema</a>
+		Hecho con <a href="https://wordpress.org" target="_blank"><i class="fab fa-wordpress-simple"></i></a> y <a href="https://github.com/SantiMora/myWpLightTheme" target="_blank">mi tema</a>
 	</p>
 </footer>
 <?php wp_footer();?>
