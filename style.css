@@ -536,12 +536,16 @@ body.single-post .post-title h1::before {
 }
 
 .wp-block-button__link {
-    background: var(--secondary-color);
-    transition: background .2s;
+    background: var(--header-color);
+    transition: background .2s, color.2s;
     color: var(--primary-color);
 }
 .wp-block-button__link:hover {
     background: var(--hover-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: none;
+}
+
+.alignright {
+	text-align: right;
 }
