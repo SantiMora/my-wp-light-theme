@@ -24,7 +24,7 @@
 
 	<p style="text-align: left;">
 		<i class="fa fa-copyright"></i> 
-		<strong><?=date('Y')?></strong> 
+		<?=date('Y')?>
 		Hecho con <a href="https://wordpress.org" target="_blank"><i class="fab fa-wordpress-simple"></i></a> y <a href="https://github.com/SantiMora/myWpLightTheme" target="_blank">mi tema</a>
 	</p>
 </footer>
