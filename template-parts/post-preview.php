@@ -14,7 +14,7 @@
 		<?php endif;?>
 	</div>
 
-    <div class="post-content">
+    <div class="post-content-preview">
         <?php the_excerpt();?>
     </div>
 

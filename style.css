@@ -21,11 +21,11 @@ with others.
 	--max-width: 720px;
 	--background: #222;
 	--header-color: #eee;
-	--primary-color: #bbb;
+	--primary-color: #ccc;
 	--secondary-color: #666;
 	--third-color: #333;
 	--hover-color: #499168;
-	--link-color: #888;
+	--link-color: #666;
 }
 
 /* resets */
@@ -88,7 +88,9 @@ html {
 	scrollbar-color: #595959 #222;
 	scrollbar-width: thin;
 	font-family: 'DM Sans', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
+	hyphens: auto;
+	word-wrap:break-word;
 	background: var(--background);
 	color: var(--primary-color);
 }
@@ -113,19 +115,20 @@ h3 {font-size: 1.3rem;}
 h4 {font-size: 1.1rem;}
 h5 {font-size: .9rem;}
 h6 {font-size: .7rem;}
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	font-family: sans-serif;
 	color:var(--header-color);
+	margin-top: 25px;
 }
-p, ul, ol,  .wp-block-columns {
+p, .wp-block-columns {
 	margin: 25px 0;
 	text-align: justify;
 	word-spacing: -2px;
-	line-height: 1.4rem;
+	line-height: 1.5rem;
 }
 li {
-	margin: 10px 40px 10px;
+	margin: 10px 0 10px 20px;
 }
 small {
 	font-size: 0.7rem;
@@ -139,7 +142,8 @@ figure {
 }
 figcaption {
 	color: var(--secondary-color);
-	font-size: 0.7rem;
+	font-size: .7rem;
+	line-height: .9rem;
 }
 strong {
 	color:var(--header-color);
@@ -204,6 +208,7 @@ figure.circle-150 img {
 	right: 0;
 	background: linear-gradient(black, transparent);
 	height: 5px;
+	z-index: 9;
 }
 
 #site-header nav {
@@ -323,12 +328,16 @@ article.post{
 	margin:35px 0;
 }
 
+.post-content ul, .post-content ol {
+	margin: 25px 0;
+}
+
 .post-title, .archive-title {
 	position: sticky;
 	top: 60px;
 	background: var(--background);
 	border-bottom: 1px solid var(--third-color);
-	padding: 30px 5px 15px;
+	padding: 5px 5px 15px;
 	margin: 0px -5px 10px -5px;
 	box-shadow: 0 0 8px 3px var(--background);
 }
@@ -360,10 +369,14 @@ body.single-post .post-title h1::before {
 	margin-top: 45px;
 }
 
+.post-tags {
+	margin: 25px 0;
+}
+
 .post-preview {
 	border: 1px solid;
 	border-color: var(--third-color);
-	padding: 25px;
+	padding: 0 25px;
 	border-radius: 10px;
 	cursor:pointer;
 	transition: all .2s;
