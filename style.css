@@ -137,6 +137,13 @@ small {
 cite {
 	z-index: -1;
 }
+blockquote {
+	font-size: 0.8rem !important;
+	border: 1px solid var(--third-color);
+	margin: 25px 0;
+	padding: 0px 20px;
+	border-radius: 10px;
+}
 figure {
 	text-align: center;
 }
@@ -207,10 +214,13 @@ figure.circle-150 img {
 	top: 70px; /* must be #site-header's height */
 	left: 0;
 	right: 0;
-	background: linear-gradient(black, transparent);
-	height: 5px;
+	background: linear-gradient(#0006, transparent);
+	height: 8px;
 	z-index: 9;
 }
+
+#wpadminbar ~ #site-header {top: 32px;} /* #wpadminbar's height */
+#wpadminbar ~ #site-header-shadow {top:102px;} /* #wpadminbar's height + #site-header's height */
 
 #site-header nav {
 	max-width: var(--max-width);
@@ -334,13 +344,14 @@ article.post{
 }
 
 .post-title, .archive-title {
-	position: sticky;
+	/*position: sticky;
 	top: 60px;
 	background: var(--background);
+	box-shadow: 0 0 8px 3px var(--background);*/
 	border-bottom: 1px solid var(--third-color);
 	padding: 5px 5px 15px;
 	margin: 0px -5px 10px -5px;
-	box-shadow: 0 0 8px 3px var(--background);
+	
 }
 
 .post-title h1::before, .archive-title h1::before {
@@ -367,10 +378,6 @@ body.single-post .post-title h1::before {
 	margin-right: 15px;
 }
 
-.post-tags {
-	margin: 25px 0;
-}
-
 .post-preview {
 	border: 1px solid;
 	border-color: var(--third-color);
@@ -381,6 +388,10 @@ body.single-post .post-title h1::before {
 }
 .post-preview:hover {
     border-color: var(--hover-color);
+}
+
+.post-preview .post-tags {
+	margin: 25px 0;
 }
 
 #comments-section-anchor {

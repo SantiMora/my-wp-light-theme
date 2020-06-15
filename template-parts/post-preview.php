@@ -1,7 +1,7 @@
 
 <article id="post-<?php the_ID();?>" <?php post_class("post-preview");?> onclick="window.location='<?=get_the_permalink()?>';">
 
-	<h2><?php the_title();?></h2>
+	<h3><?php the_title();?></h3>
 
     <div class="post-meta">
 		<small><i class="fa fa-calendar-o"></i> <time><?=get_the_date();?></time></small>
