@@ -25,7 +25,8 @@ with others.
 	--third-color: #333;
 	--hover-color: #e1a95f;
 	--link-color: #769799;
-	--header-color: #bd8235;
+	--header-color: #e1a95f;
+	--strong-color: #fff;
 }
 
 /* resets */
@@ -109,9 +110,9 @@ a:hover, #site-header .current-menu-item a {
 	text-decoration: underline;
 	color: var(--hover-color);
 }
-h1 {font-size: 1.7rem;}
-h2 {font-size: 1.5rem;}
-h3 {font-size: 1.3rem;}
+h1 {font-size: 1.5rem;}
+h2 {font-size: 1.3rem;}
+h3 {font-size: 1.2rem;}
 h4 {font-size: 1.1rem;}
 h5 {font-size: .9rem;}
 h6 {font-size: .7rem;}
@@ -158,7 +159,7 @@ figcaption {
 	line-height: .9rem;
 }
 strong {
-	color:var(--header-color);
+	color:var(--strong-color);
 }
 
 a[rel="tag"] {
@@ -204,7 +205,7 @@ figure.circle-150 img {
 	position: sticky;
 	top: 0;
 	background: var(--background);
-	margin: 60px 0 50px;
+	margin: 60px 0 60px;
 	padding-top: 5px;
 	overflow: hidden;
 	z-index: 10;
@@ -323,7 +324,8 @@ figure.circle-150 img {
 		display: inline-block;
 	}
 	#site-header {
-		margin: 0;
+		margin-top: 0;
+		margin-bottom: 35px;
 	}
 }
 
@@ -378,6 +380,10 @@ body.tag .archive-title h1::before {
 }
 body.single-post .post-title h1::before {
 	content: "\f1ea";
+}
+
+.post-meta {
+	margin: 5px 0;
 }
 
 .post-meta small {
