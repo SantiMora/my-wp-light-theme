@@ -95,7 +95,7 @@ html {
 	color: var(--primary-color);
 }
 main {
-	min-height: 85vh;
+	min-height: 80vh;
 	max-width: var(--max-width);
 	margin-left:auto;
 	margin-right: auto;
@@ -335,6 +335,7 @@ figure.circle-150 img {
 	padding: 20px 1rem;
 	border-top: 1px solid var(--third-color);
 	color: var(--secondary-color);
+	font-size: 0.9rem;
 }
 #site-footer .footer-buttons {
 	float: right;
