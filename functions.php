@@ -12,6 +12,7 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 add_theme_support( 'custom-logo' );
+add_theme_support( 'title-tag' );
 
 // Walker style override
 if ( !function_exists( 'MyCustomTheme_comment_template' ) ) {
