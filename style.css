@@ -1,10 +1,12 @@
 /*
 Theme Name: My custom theme
+Github Theme URI: https://github.com/SantiMora/myWpLightTheme.git
 Text Domain: customtheme
-Version: 0
+Version: v1.0
 Requires at least: 4.7
 Requires PHP: 5.2.4
 Description: My very own personal theme for my very own personal blog
+Author: Santiago Mora (contact@smora.dev)
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -407,16 +409,6 @@ body.single-post .post-title h1::before {
 
 .post-preview .post-tags, .post-preview .post-content-preview {
 	margin: 25px 0;
-}
-
-.wp-block-column h1:first-child,
-.wp-block-column h2:first-child,
-.wp-block-column h3:first-child,
-.wp-block-column h4:first-child,
-.wp-block-column h5:first-child,
-.wp-block-column h6:first-child
-{
-    margin-top: 25px;
 }
 
 /* Search form*/
