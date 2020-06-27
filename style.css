@@ -518,17 +518,17 @@ body.single-post .post-title h1::before {
 }
 
 #comments-section .comment-form .form-submit input {
-	color: var(--primary-color);
 	padding: 15px;
-	border: 0;
-	border-radius: 5px;
-	background: var(--secondary-color);
+	border-radius: 50px;
+	background: transparent;
 	transition: all .2s;
+	border: 1px solid var(--hover-color);
+	color: var(--hover-color);
 }
 
 #comments-section .comment-form .form-submit input:hover {
 	background: var(--hover-color);
-	color: var(--third-color);
+	color: var(--strong-color);
 }
 
 @media (min-width: 780px) {
@@ -576,7 +576,7 @@ body.single-post .post-title h1::before {
 .wp-block-button__link {
     background: transparent;
     color: var(--hover-color);
-    border: 1px solid var(--hover-color)
+    border: 1px solid var(--hover-color);
     transition: background .2s, color.2s;
 }
 .wp-block-button__link:hover {
