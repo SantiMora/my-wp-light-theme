@@ -180,7 +180,7 @@ a[rel="tag"]:not(:last-of-type) {
 
 a[rel="tag"]:hover {
 	background: var(--hover-color);
-	color:var(--third-color);
+	color:var(--strong-color);
 }
 a[rel="tag"]::before {
 	font-family: "Font Awesome 5 Free";
@@ -574,13 +574,14 @@ body.single-post .post-title h1::before {
 }
 
 .wp-block-button__link {
-    background: var(--header-color);
+    background: transparent;
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color)
     transition: background .2s, color.2s;
-    color: var(--primary-color);
 }
 .wp-block-button__link:hover {
     background: var(--hover-color);
-    color: var(--third-color);
+    color: var(--strong-color);
     text-decoration: none;
 }
 
@@ -607,4 +608,9 @@ body.single-post .post-title h1::before {
 .home-icon {
 	margin: 25px 0 35px 0;
 	color: inherit;
+}
+
+.wp-block-separator {
+    border-color: var(--third-color);
+    color: var(--secondary-color);
 }
