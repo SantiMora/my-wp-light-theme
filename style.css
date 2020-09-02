@@ -257,7 +257,7 @@ figure.circle-150 img {
 
 #site-header .header-menu, #site-header .socials {
 	float:right;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 #site-header .socials a {
@@ -286,7 +286,7 @@ figure.circle-150 img {
 #site-header .expand-secondary-menu {
 	display: none;
 	float: right;
-	margin-left: 30px;
+	margin-left: 10px;
 	font-size: 1.2rem;
 }
 
