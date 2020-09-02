@@ -348,9 +348,14 @@ figure.circle-150 img {
 	border-top: 1px solid var(--third-color);
 	color: var(--secondary-color);
 	font-size: 0.9rem;
+	display: flex;
+}
+#site-footer .footer-feats {
+	flex: 1 auto;
 }
 #site-footer .footer-buttons {
-	float: right;
+	flex: 0 auto;
+	margin-left: 40px;
 }
 #site-footer .footer-buttons a {
 	margin: 5px;
@@ -553,19 +558,21 @@ body.single-post .post-title h1::before {
 
 .tooltip::before {
     content: attr(data-tooltip-text);
-    position: absolute;
-    background: var(--third-color);
-    padding: 15px;
-    border-radius: 5px;
-    transform: translateX(-50%) translateY(-64px);
-    box-shadow: 0 0 10px -6px black;
-    color: var(--primary-color) !important;
-    visibility: collapse;
-    transition: opacity .2s;
-    opacity: 0;
-    white-space: nowrap;
-    left: 10px;
+	position: absolute;
+	background: var(--third-color);
+	padding: 15px;
+	border: 1px var(--secondary-color) solid;
+	border-radius: 20px 20px 0px 20px;
+	transform: translateX(-100%) translateY(-64px);
+	box-shadow: 0 0 10px -6px black;
+	color: var(--primary-color) !important;
+	visibility: collapse;
+	transition: opacity .2s;
+	opacity: 0;
+	white-space: nowrap;
+	left: 10px;
 	z-index: 1;
+	
 }
 
 .tooltip:hover::before {

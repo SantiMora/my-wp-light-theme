@@ -1,5 +1,9 @@
 <footer id="site-footer">
 
+	<div class="footer-feats">
+		<i class="fa fa-copyright"></i> <?=date('Y')?> con <a href="https://wordpress.org" target="_blank"><i class="fab fa-wordpress-simple"></i></a> y <a href="https://github.com/SantiMora/myWpLightTheme" target="_blank">mi tema</a>
+	</div>
+
 	<div class="footer-buttons">
 
 		<?php if (get_privacy_policy_url()) :?>
@@ -19,14 +23,7 @@
 		</a>
 
 	</div>
-
-	<i class="fa fa-copyright"></i> 
-
-	<?=date('Y')?>
-
-	Hecho con <a href="https://wordpress.org" target="_blank"><i class="fab fa-wordpress-simple"></i></a> y 
-	<a href="https://github.com/SantiMora/myWpLightTheme" target="_blank">mi tema</a>
-
+	
 </footer>
 <?php wp_footer();?>
 </body>
